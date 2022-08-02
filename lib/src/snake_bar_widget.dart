@@ -272,7 +272,7 @@ class _SnakeNavigationBar extends StatelessWidget {
 
     return AnimatedPadding(
       padding: padding,
-      duration: kThemeChangeDuration,
+      duration: Duration.zero,
       child: Stack(
         alignment: Alignment.bottomCenter,
         children: [
@@ -286,7 +286,7 @@ class _SnakeNavigationBar extends StatelessWidget {
               color: Colors.transparent,
               shape: shape,
               child: AnimatedContainer(
-                duration: kThemeChangeDuration,
+                duration: Duration.zero,
                 decoration: BoxDecoration(gradient: theme.backgroundGradient),
                 height: height,
                 child: Stack(
@@ -306,7 +306,7 @@ class _SnakeNavigationBar extends StatelessWidget {
           AnimatedContainer(
             height: isPinned ? MediaQuery.of(context).padding.bottom : 0,
             decoration: BoxDecoration(gradient: theme.backgroundGradient),
-            duration: kThemeChangeDuration,
+            duration: Duration.zero,
           ),
         ],
       ),
